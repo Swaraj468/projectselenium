@@ -6,9 +6,9 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 public class demo {
 	
-	WebDriver driver;
+   public static WebDriver driver;
 	public void openBrowser() {
-        driver = new EdgeDriver();
+        EdgeDriver driver = new EdgeDriver();
         driver.get("https://google.com");
         driver.findElement(By.id("APjFqb")).sendKeys("https://practice.expandtesting.com/login/");
         driver.findElement(By.id("APjFqb")).submit();
@@ -16,6 +16,11 @@ public class demo {
         driver.findElement(By.id("username")).sendKeys("practice");
         driver.findElement(By.id("password")).sendKeys("SuperSecretPassword!");
         driver.findElement(By.xpath("//*[@id=\"login\"]/button")).click();
+//        System.out.println(driver.getTitle());
+        String title = driver.getTitle();
+        
+        System.out.println(title);
+        System.out.println(title.length());
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
