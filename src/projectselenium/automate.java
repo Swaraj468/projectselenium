@@ -33,7 +33,7 @@ public class automate {
         driver.findElement(By.xpath("//*[@id=\"register_form\"]/fieldset[10]/textarea")).sendKeys("Hello");
         driver.findElement(By.xpath("//*[@id=\"register_form\"]/fieldset[11]/input")).sendKeys("Gupta");
         driver.findElement(By.xpath("//*[@id=\"register_form\"]/fieldset[12]/input")).sendKeys("Gupta");
-//        driver.findElement(By.xpath("//*[@id=\"register_form\"]/fieldset[13]/input")).click();
+//      driver.findElement(By.xpath("//*[@id=\"register_form\"]/fieldset[13]/input")).click();
         
         String title = driver.getTitle();
         
