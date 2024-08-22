@@ -16,14 +16,15 @@ public class automate {
         driver.findElement(By.xpath("//*[@id=\"register_form\"]/fieldset[1]/p[2]/input")).sendKeys("Gupta");
         driver.findElement(By.xpath("//*[@id=\"register_form\"]/fieldset[2]/div/label[1]/input")).click();
         driver.findElement(By.xpath("//*[@id=\"register_form\"]/fieldset[3]/div/label[2]/input")).click();
+        
         Select dropdown = new Select(driver.findElement(By.xpath("//*[@id=\"register_form\"]/fieldset[4]/select")));
         dropdown.selectByIndex(0);
         Select dropdown1 = new Select(driver.findElement(By.xpath("//*[@id=\"register_form\"]/fieldset[5]/div[1]/select")));
-        dropdown1.selectByIndex(0);
+        dropdown1.selectByIndex(1);
         Select dropdown2 = new Select(driver.findElement(By.xpath("//*[@id=\"register_form\"]/fieldset[5]/div[2]/select")));
-        dropdown2.selectByIndex(0);
+        dropdown2.selectByIndex(1);
         Select dropdown3 = new Select(driver.findElement(By.xpath("//*[@id=\"register_form\"]/fieldset[5]/div[3]/select")));
-        dropdown3.selectByIndex(0);
+        dropdown3.selectByIndex(1);
 
 
         driver.findElement(By.xpath("//*[@id=\"register_form\"]/fieldset[6]/input")).sendKeys("+91-8235107591");
@@ -32,12 +33,14 @@ public class automate {
         driver.findElement(By.xpath("//*[@id=\"register_form\"]/fieldset[10]/textarea")).sendKeys("Hello");
         driver.findElement(By.xpath("//*[@id=\"register_form\"]/fieldset[11]/input")).sendKeys("Gupta");
         driver.findElement(By.xpath("//*[@id=\"register_form\"]/fieldset[12]/input")).sendKeys("Gupta");
-        driver.findElement(By.xpath("//*[@id=\"register_form\"]/fieldset[13]/input")).click();
+//        driver.findElement(By.xpath("//*[@id=\"register_form\"]/fieldset[13]/input")).click();
         
-String title = driver.getTitle();
+        String title = driver.getTitle();
         
         System.out.println(title);
         System.out.println(title.length());
+//        driver.close();
+//        driver.quit();
         
 	}
         
